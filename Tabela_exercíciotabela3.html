@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<style type="text/css">
+		.container {
+			margin-top: 50px;
+			padding: 30px 100px 50px;
+			border-style: solid;
+  			border-width: 1px;
+  			border-color: rgba(130, 130, 130, 1);
+  			border-radius: 10px;
+		}
+
+		h1 {
+			color: cadetblue;
+			border-bottom-style: solid;				
+			border-bottom-color: rgba(130, 130, 130, 1);
+			border-bottom-width: 1px;
+			margin-bottom: 20px;
+		};
+
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+		<h1>Consulta de Notas</h1>
+
+	<form id="form-adiciona">
+	Digite seu nome:
+	<br>
+	<input type="" id="campoNome" name="nome">
+	<br>
+	<br>
+	Digite sua Nota da N1:
+	<br>	
+	<input type="" id="campoNotaN1" name="notaN1">
+	<br>
+	<br>
+	Digite sua Nota da N2:
+	<br>	
+	<input type="" id="campoNotaN2" name="notaN2">
+	<br>
+	<br>
+	<br>
+
+	<button id="adicionar-aluno">Adicionar Aluno</button>
+
+	<button onclick="mostraResultadoMedia()">Calcula Média</button>
+	<br>
+	<br>
+	<br>
+	</form>
+
+
+	<table border="1">
+
+	<th>Nome</th>
+	<th>N1</th>
+	<th>N2</th>
+	<th>Média</th>
+	<th>Situação do Aluno</th>
+
+	<tbody id="tabela-alunos">
+
+	<tr class="aluno" id="primeiro-aluno">
+		<td class="info-nome">Leandrinho</td>
+		<td class="info-n1">10</td>
+		<td class="info-n2">10</td>
+		<td class="info-media">0</td>
+		<td class="info-status">0</td>
+	</tr>
+
+	<tr class="aluno">
+		<td class="info-nome">Ana Luiza</td>
+		<td class="info-n1">7</td>
+		<td class="info-n2">6</td>
+		<td class="info-media">0</td>
+		<td class="info-status">0</td>
+	</tr>
+
+	<tr class="aluno">
+		<td class="info-nome">Joãozinho</td>
+		<td class="info-n1">4</td>
+		<td class="info-n2">4</td>
+		<td class="info-media">0</td>
+		<td class="info-status">0</td>
+	</tr>
+
+	</tbody>
+	</table>	
+
+	<br>
+	<br>
+	<button onclick="mostraResultadoMediaTabela()">Calcula Média</button>
+	<br>
+
+	</div>		
+
+	<script src="calculaMedia.js"></script>
+	<script src="form.js"></script>
+
+</body>
+</html>
+
